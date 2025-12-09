@@ -1,0 +1,12 @@
+{
+  "homepage": "https://Chen-Zehua-TP.github.io/scratch-course-landing-page",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run copy",
+    "clean": "rmdir /s /q dist 2>nul || exit /b 0 && mkdir dist",
+    "copy": "xcopy src\\* dist\\ /E /I /Y",
+    "deploy": "npm run build && gh-pages -d dist"
+  }
+}
