@@ -6,34 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=yes">
     
-    <!-- SEO Tags for Junior Coders (7-12 years old) -->
-    <title>Coding for 7-12 Year Olds Singapore | Junior Coders Class - Happy Tutors Learning Centre</title>
-    <meta name="description" content="Your 7-12 year old can learn to code! Book a $29.99 coding class with Happy Tutors Learning Centre. Small classes, proven curriculum. Limited to 2 students per class.">
-    <meta name="keywords" content="coding for 7-12 year olds singapore, kids coding class, preschool programming, kindergarten coding, junior coders singapore">
+    <!-- SEO Tags for Young Innovators (9-12 years old) -->
+    <title>Coding for 9-12 Year Olds Singapore | Young Innovators Class - The Coding Mentor</title>
+    <meta name="description" content="Learn coding with Scratch Jr, Scratch, and Python! Book an $8 trial lesson with The Coding Mentor. Small classes (max 3 students), expert MOE registered instructors. Flexible home or tutor location.">
+    <meta name="keywords" content="coding for 9-12 year olds singapore, kids coding class, preschool programming, kindergarten coding, Young Innovators singapore">
     
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Your 7-12 Year Old Can Code. Yes, Really. | Happy Tutors Learning Centre">
-    <meta property="og:description" content="Join 700+ Singapore families. Book a $29.99 coding class for ages 7-12. See your child create their first animation!">
+    <meta property="og:title" content="Your 9-12 Year Old Can Code. Yes, Really. | The Coding Mentor">
+    <meta property="og:description" content="Join families learning Scratch Jr, Scratch & Python. $8 trial lesson with The Coding Mentor. Expert teachers, personalized attention, flexible location.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://happytutorslearningcentre.com/classes/junior-coders">
+    <link rel="canonical" href="">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "Junior Coders Coding Class",
-        "description": "Introductory coding class for young children aged 7-12 years old",
+        "name": "Young Innovators Coding Class",
+        "description": "Introductory coding class for young children aged 9-12 years old",
         "provider": {
             "@type": "Organization",
-            "name": "Happy Tutors Learning Centre",
-            "sameAs": "https://happytutors.edu.sg/"
+            "name": "The Coding Mentor",
         },
         "offers": {
             "@type": "Offer",
-            "price": "29.99",
+            "price": "8",
             "priceCurrency": "SGD",
             "availability": "https://schema.org/InStock",
             "validFrom": "2025-01-15"
@@ -41,16 +40,14 @@
         "audience": {
             "@type": "EducationalAudience",
             "educationalRole": "student",
-            "audienceType": "7-12 year old children"
+            "audienceType": "9-12 year old children"
         },
         "location": {
             "@type": "Place",
-            "name": "4 Jalan Bukit Ho Swee",
+            "name": "Home or Tutor Location",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "4 Jalan Bukit Ho Swee #01-154",
                 "addressLocality": "Singapore",
-                "postalCode": "162004",
                 "addressCountry": "SG"
             }
         }
@@ -60,7 +57,7 @@
     <!-- Google Fonts - Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./scratch homepage_files/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="./scratch homepage_files/style-new.css">
@@ -125,6 +122,75 @@
             cursor: pointer;
         }
 
+        /* Calendly Modal */
+        .calendly-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+        }
+
+        .calendly-modal.active {
+            display: flex;
+        }
+
+        .calendly-modal-content {
+            position: relative;
+            background: white;
+            width: 95%;
+            height: 90vh;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .calendly-close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 32px;
+            color: #333;
+            cursor: pointer;
+            z-index: 1001;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s;
+        }
+
+        .calendly-close-btn:hover {
+            color: #F3B016;
+        }
+
+        .calendly-modal-content .calendly-inline-widget {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .calendly-modal-content {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+                margin: 0;
+            }
+        }
+
         @media (max-width: 768px) {
             .whatsapp-float {
                 bottom: 90px;
@@ -145,13 +211,22 @@
     
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="abB2_NGLwIxu5GlrNxQGbdpunZJdCZt9ZcQtIhNrQsQ">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K157183XM6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K157183XM6');
+    </script>
 </head>
 <body>
     <!-- Navigation Header -->
     <header class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="./scratch homepage_files/logo.png" alt="Happy Tutors Learning Centre Logo" class="logo">
+                <img src="./scratch homepage_files/logo.png" alt="The Coding Mentor Logo" class="logo">
             </div>
             <nav class="nav-menu">
                 <a href="#why-coding" class="nav-link">Why Coding</a>
@@ -173,38 +248,38 @@
     <section class="hero-new">
         <div class="hero-container">
             <div class="hero-main">
-                <div class="hero-badge">JUNIOR CODERS • AGES 7-12</div>
+                <div class="hero-badge">🎉 TRIAL LESSON • $8 • AGES 9-12</div>
                 <h1 class="hero-title">
                     Your Child's <span class="accent-yellow">Coding Journey</span><br>
                     Starts Here
                 </h1>
                 <p class="hero-subtitle">
-                    In just 60 minutes, watch your child discover the joy of coding, build real projects, and develop problem-solving skills that last a lifetime.
+                    Try our coding class FREE with a $8 trial lesson. In 90 minutes, watch your child discover the joy of coding and build real projects!
                 </p>
-                <button class="btn btn-primary btn-large" onclick="scrollToCalendar()">
-                    Book Now at $29.99
+                <button class="btn btn-primary btn-large" onclick="openWhatsApp()">
+                    Book Your $8 Trial Lesson Now
                 </button>
             </div>
             <div class="hero-highlights">
                 <div class="highlight-card">
                     <div class="highlight-icon">💻</div>
                     <div class="highlight-text">
-                        <h4>Laptops Provided</h4>
-                        <p>Everything set up and ready</p>
+                        <h4>Focused Curriculum</h4>
+                        <p>Designed to galvanize learning & exploration</p>
                     </div>
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-icon">👥</div>
                     <div class="highlight-text">
-                        <h4>Max 6 Students</h4>
-                        <p>Personalized attention always</p>
+                        <h4>Max 3 Students</h4>
+                        <p>Personalized attention</p>
                     </div>
                 </div>
                 <div class="highlight-card">
                     <div class="highlight-icon">⭐</div>
                     <div class="highlight-text">
                         <h4>Expert Teachers</h4>
-                        <p>Patient and naturally gifted</p>
+                        <p>2-3 years experience + MOE registered instructors</p>
                     </div>
                 </div>
             </div>
@@ -222,11 +297,6 @@
                     <div class="why-icon">🧩</div>
                     <h3>Logical Problem-Solving</h3>
                     <p>Breaking complex problems into manageable steps. <strong>A skill that lasts a lifetime.</strong></p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">🎨</div>
-                    <h3>Creative Expression</h3>
-                    <p>Using technology as a tool to bring ideas to life. <strong>Building confidence in the process!</strong></p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">🚀</div>
@@ -251,7 +321,7 @@
                 
                 <div class="stats-row">
                     <div class="stat-card">
-                        <div class="stat-number">60</div>
+                        <div class="stat-number">90</div>
                         <div class="stat-label">Minutes of guided learning</div>
                     </div>
                     <div class="stat-card">
@@ -279,7 +349,7 @@
                     <div class="project-specs">
                         <div class="spec-item">
                             <span class="spec-icon">⏱️</span>
-                            <span class="spec-text"><strong>Duration:</strong> 60 minutes of focused learning</span>
+                            <span class="spec-text"><strong>Duration:</strong> 90 minutes of focused learning</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-icon">📊</span>
@@ -310,8 +380,8 @@
                         <span class="step-num">1</span>
                     </div>
                     <div class="step-body">
-                        <h4>Select Your Time</h4>
-                        <p>Choose a date that works for your child. Limited spots keep class small & effective.</p>
+                        <h4>Book Your $8 Trial Lesson</h4>
+                        <p>Reserve your spot for a 90-minute trial lesson. Contact us via WhatsApp to secure your time.</p>
                     </div>
                 </div>
                 
@@ -322,8 +392,8 @@
                         <span class="step-num">2</span>
                     </div>
                     <div class="step-body">
-                        <h4>Book at $29.99</h4>
-                        <p>Quick payment takes one minute. Your spot is guaranteed, and you'll get confirmation.</p>
+                        <h4>Attend Your Trial Lesson</h4>
+                        <p>Come experience real coding! We provide everything—laptops, materials, expert guidance.</p>
                     </div>
                 </div>
                 
@@ -334,8 +404,8 @@
                         <span class="step-num">3</span>
                     </div>
                     <div class="step-body">
-                        <h4>Arrive & Enjoy</h4>
-                        <p>We provide everything—laptops, materials, guidance. Just bring your excited child!</p>
+                        <h4>Continue Your Journey</h4>
+                        <p>Love the trial? Sign up for ongoing programs with Scratch Jr, Scratch, and Python.</p>
                     </div>
                 </div>
             </div>
@@ -349,24 +419,24 @@
             
             <div class="details-grid">
                 <div class="detail-card">
-                    <div class="detail-icon">📍</div>
-                    <h4>Location</h4>
-                    <p>4 Jalan Bukit Ho Swee #01-154, Singapore 162004</p>
-                </div>
-                <div class="detail-card">
                     <div class="detail-icon">⏱️</div>
-                    <h4>Duration</h4>
-                    <p>60 minutes of immersive learning and hands-on coding</p>
+                    <h4>Trial Lesson</h4>
+                    <p>$8 trial lesson x 90 minutes</p>
                 </div>
                 <div class="detail-card">
                     <div class="detail-icon">👥</div>
                     <h4>Class Size</h4>
-                    <p>Maximum 6 students for personalized attention</p>
+                    <p>Maximum 3 students for personalized attention</p>
                 </div>
                 <div class="detail-card">
-                    <div class="detail-icon">💰</div>
-                    <h4>Price</h4>
-                    <p>$29.99 per student (non-refundable, reschedule with 24h notice)</p>
+                    <div class="detail-icon">📚</div>
+                    <h4>Curriculum</h4>
+                    <p>Scratch Jr, Scratch, and Python programming</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">🏠</div>
+                    <h4>Flexible Location</h4>
+                    <p>Home classroom at tutor's place or at your home</p>
                 </div>
             </div>
         </div>
@@ -382,7 +452,7 @@
                 <div class="teacher-card">
                     <div class="teacher-badge">Early Learning Specialist</div>
                     <h4>Expert in Child Development</h4>
-                    <p>Our teachers have formal training in childhood development and understand exactly how 7-12 year olds learn best. Patience and encouragement are their superpowers.</p>
+                    <p>Our teachers have formal training in childhood development and understand exactly how 9-12 year olds learn best. Patience and encouragement are their superpowers.</p>
                 </div>
                 <div class="teacher-card">
                     <div class="teacher-badge">Passionate Mentor</div>
@@ -398,10 +468,10 @@
         </div>
     </section>
 
-    <!-- Why HTLC Comparison -->
+    <!-- Why The Coding Mentor Comparison -->
     <section class="section section-accent">
         <div class="container">
-            <h2 class="section-title">Why Choose HTLC?</h2>
+            <h2 class="section-title">Why Choose The Coding Mentor?</h2>
             
             <div class="comparison-container">
                 <div class="comparison-box">
@@ -418,9 +488,9 @@
                 <div class="comparison-divider"></div>
                 
                 <div class="comparison-box">
-                    <h4 class="comparison-title our-title">HTLC Junior Coders</h4>
+                    <h4 class="comparison-title our-title">The Coding Mentor Young Innovators</h4>
                     <ul class="comparison-list">
-                        <li><strong>Max 6 students per class</strong></li>
+                        <li><strong>Max 3 students per class</strong></li>
                         <li><strong>Each child moves at their own pace</strong></li>
                         <li><strong>Age-appropriate, play-based learning</strong></li>
                         <li><strong>Real coding logic through activities</strong></li>
@@ -430,7 +500,7 @@
             </div>
             
             <p class="insight-text">
-                <strong>Parent Insight:</strong> Ages 7-12 is the sweet spot for learning. Young enough to be excited, old enough to understand sequences and logic. This is the time!
+                <strong>Parent Insight:</strong> Ages 9-12 is the sweet spot for learning. Young enough to be excited, old enough to understand sequences and logic. This is the time!
             </p>
         </div>
     </section>
@@ -438,7 +508,7 @@
     <!-- Trust Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Join Families Who Trust HTLC</h2>
+            <h2 class="section-title">Why Families Trust The Coding Mentor</h2>
             
             <div class="trust-grid">
                 <div class="trust-card">
@@ -468,11 +538,11 @@
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h4>Isn't 7 too young to code?</h4>
+                        <h4>Isn't 9 too young to code?</h4>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely not! 7-year-olds naturally understand sequences and logic through play. This is actually the perfect age to build foundational thinking skills before formal education begins.</p>
+                        <p>Absolutely not! 9-year-olds naturally understand sequences and logic through play. This is actually the perfect age to build foundational thinking skills before formal education begins.</p>
                     </div>
                 </div>
                 
@@ -502,7 +572,7 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>4 Jalan Bukit Ho Swee #01-154, S(162004). Conveniently located with easy access via public transport and plenty of nearby parking.</p>
+                        <p>Classes are held at home classroom at tutor's place or at your home for your comfort. We offer flexible arrangements to suit your family's needs.</p>
                     </div>
                 </div>
                 
@@ -512,7 +582,7 @@
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>The $29.99 booking is non-refundable, but you can reschedule for free within a month with 24 hours' notice. If we cancel due to unforeseen circumstances, full refund guaranteed.</p>
+                        <p>The booking is non-refundable, but you can reschedule for free within a month with 24 hours' notice. If we cancel due to unforeseen circumstances, full refund guaranteed.</p>
                     </div>
                 </div>
             </div>
@@ -522,13 +592,13 @@
     <!-- Final CTA Section -->
     <section class="cta-final">
         <div class="container">
-            <h2>Give Your Child the Gift of Problem-Solving</h2>
-            <p>Start their coding journey at 7-12, watch them thrive at school and beyond</p>
-            <button class="btn btn-primary btn-large btn-white" onclick="scrollToCalendar()">
-                Reserve Your Spot Now • $29.99 (Limited Spots)
+            <h2>Ready to Try? Book Your $8 Trial Lesson Today</h2>
+            <p>90 minutes to discover if coding is right for your child. Small classes, expert teachers, real projects.</p>
+            <button class="btn btn-primary btn-large btn-white" onclick="openWhatsApp()">
+                Reserve Trial Lesson Now
             </button>
             <div class="guarantee-text">
-                ✓ Small classes (max 6) • Expert teachers • Flexible rescheduling (24h notice)
+                ✓ Only $8 for 90-minute trial • Max 3 students • Expert MOE-registered teachers
             </div>
         </div>
     </section>
@@ -536,28 +606,63 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Happy Tutors Learning Centre (HTLC) • 4 Jalan Bukit Ho Swee #01-154, Singapore 162004</p>
+            <p>&copy; 2025 The Coding Mentor (TCM)</p>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="" target="_blank" class="whatsapp-float" onclick="gtag('event', 'whatsapp_click', {'page': 'junior_coders', 'ref': 'jc_web'});">
+    <button class="whatsapp-float" onclick="gtag('event', 'whatsapp_click', {'page': 'junior_coders', 'ref': 'jc_web'}); openWhatsApp();">
         <img src="./scratch homepage_files/whatsapp.png" alt="WhatsApp" width="32" height="32">
-    </a>
+    </button>
 
     <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <button class="sticky-btn" onclick="scrollToCalendar()">
-            Book Your Class at $29.99 →
+        <button class="sticky-btn" onclick="openWhatsApp()">
+            Book $8 Trial Lesson →
         </button>
     </div>
 
+    <!-- Calendly Modal -->
+    <div id="calendly-modal" class="calendly-modal">
+        <div class="calendly-modal-content">
+            <button class="calendly-close-btn" onclick="closeCalendlyModal()">&times;</button>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/thecodingmentorsg/30min"></div>
+        </div>
+    </div>
+
     <!-- Scripts -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <script>
-        function scrollToCalendar() {
-            // Placeholder for calendar integration
-            alert('Calendar booking feature would be integrated here');
+        function openCalendlyModal() {
+            document.getElementById('calendly-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
+
+        function closeCalendlyModal() {
+            document.getElementById('calendly-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function openWhatsApp() {
+            // Track the click event with detailed metrics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'whatsapp_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'trial_lesson_inquiry',
+                    'value': 1
+                });
+            }
+            
+            // Open WhatsApp
+            window.open('https://wa.me/6584059177', '_blank');
+        }
+
+        // Close modal when clicking outside the content
+        document.getElementById('calendly-modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeCalendlyModal();
+            }
+        });
 
         // FAQ Toggle Functionality
         document.querySelectorAll('.faq-question').forEach(question => {
