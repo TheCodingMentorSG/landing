@@ -289,14 +289,14 @@
                             
                             <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange">
                                 <p class="text-slate-200 text-lg italic leading-relaxed">
-                                    "Hey I'm Yuriel! I recently joined the team to help kids bridge the gap between simple games and real-world security logic. I love seeing that 'aha!' moment when a student solves a puzzle they thought was impossible."
+                                    "Hello! I recently graduated with a diploma in Cybersecurity & Digital Forensics from NYP. I joined The Coding Mentor because I love to teach, it's been my passion to be a teacher since young. Till then, I'll be tutoring here. :)"
                                 </p>
                             </div>
 
                             <ul class="space-y-4 text-base text-slate-300">
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>3+ Years specialized coding tuition</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Director's List at Nanyang Polytechnic</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Specializes in Scratch to Python transition</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>3+ Years specializing in coding tuition</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Executive Committee @ NYP's Mentoring Club</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time Director's List Awardee at Nanyang Polytechnic</p></li>
                             </ul>
                         </div>
                         <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
@@ -323,8 +323,10 @@
                             </div>
 
                             <ul class="space-y-4 text-base text-slate-300">
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Expert in problem-solving logic</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Director's List at Temasek Polytechnic</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>2+ Years experience as a Coding Tutor</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>1+ Years experience as a Math Tutor</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Vice President of TP's Cybersecurity CCA</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time School Director's List Awardee</p></li>
                             </ul>
                         </div>
                         <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
@@ -425,11 +427,14 @@
         const DEFAULT_MESSAGE = "Hi! I'm interested to book an $8 trial class with The Coding Mentor";
 
         function handleWhatsAppRedirect(customText = null) {
+            fbq('track', 'StartTrial'); 
+            // --------------------------------
+
             const text = customText || DEFAULT_MESSAGE;
             const encodedText = encodeURIComponent(text);
             const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
             window.location.href = whatsappUrl;
-        }
+            }
 
         let currentSlide = 0;
         const totalSlides = 2;
