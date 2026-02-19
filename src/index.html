@@ -6,64 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=yes">
     
-    <!-- SEO Tags for Young Innovators (9-12 years old) -->
-    <title>Coding for 9-12 Year Olds Singapore | Young Innovators Class - The Coding Mentor</title>
-    <meta name="description" content="Learn coding with Scratch Jr, Scratch, and Python! Book an $8 trial lesson with The Coding Mentor. Small classes (max 3 students), expert MOE registered instructors. Flexible home or tutor location.">
-    <meta name="keywords" content="coding for 9-12 year olds singapore, kids coding class, preschool programming, kindergarten coding, Young Innovators singapore">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Your 9-12 Year Old Can Code. Yes, Really. | The Coding Mentor">
-    <meta property="og:description" content="Join families learning Scratch Jr, Scratch & Python. $8 trial lesson with The Coding Mentor. Expert teachers, personalized attention, flexible location.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Course",
-        "name": "Young Innovators Coding Class",
-        "description": "Introductory coding class for young children aged 9-12 years old",
-        "provider": {
-            "@type": "Organization",
-            "name": "The Coding Mentor",
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "8",
-            "priceCurrency": "SGD",
-            "availability": "https://schema.org/InStock",
-            "validFrom": "2025-01-15"
-        },
-        "audience": {
-            "@type": "EducationalAudience",
-            "educationalRole": "student",
-            "audienceType": "9-12 year old children"
-        },
-        "location": {
-            "@type": "Place",
-            "name": "Home or Tutor Location",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Singapore",
-                "addressCountry": "SG"
-            }
-        }
-    }
-    </script>
-    
-    <!-- Google Fonts - Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="./scratch homepage_files/style-new.css">
+    <title>The Coding Mentor | Coding Enrichment Classes|</title>
+    <meta name="description" content="Learn coding with Scratch Jr, Scratch, and Python! Book an $8 trial lesson with The Coding Mentor. Small classes, expert MOE registered instructors.">
 
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '25782817511360658');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=25782817511360658&ev=PageView&noscript=1"
+    /></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        /* WhatsApp Floating Button */
+        :root {
+            --navy: #0a192f;
+            --orange: #f97316;
+            --orange-light: #fff7ed;
+            --orange-hover: #ea580c;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #ffffff;
+        }
+        * { border-radius: 0 !important; }
+
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .bg-brand-orange { background-color: var(--orange); }
+        .text-brand-orange { color: var(--orange); }
+        
+        .hero-pattern {
+            background-color: var(--navy);
+            background-image: radial-gradient(rgba(249, 115, 22, 0.08) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .btn-fun {
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-fun:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 0px var(--orange);
+        }
+
+        .nav-link {
+            font-size: 0.85rem; 
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #64748b; 
+            transition: all 0.2s ease;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-link:hover {
+            color: var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        .card-fun {
+            border: 1px solid #e2e8f0;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        .card-fun:hover {
+            border-color: var(--orange);
+            box-shadow: 10px 10px 0px var(--navy);
+        }
+
+        .section-tag {
+            background: var(--orange-light);
+            color: var(--orange);
+            padding: 4px 16px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .sketch-underline {
+            position: relative;
+            display: inline-block;
+        }
+        .sketch-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--orange);
+            opacity: 0.3;
+        }
+
+        .mentor-slide {
+            display: none;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        .mentor-slide.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
         .whatsapp-float {
             position: fixed;
             bottom: 20px;
@@ -72,607 +132,328 @@
             color: white;
             width: 60px;
             height: 60px;
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 32px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             z-index: 998;
             text-decoration: none;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-            color: white;
-        }
-
-        /* Mobile Sticky CTA */
         .mobile-sticky-cta {
             position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            bottom: 0; left: 0; right: 0;
             background: white;
             padding: 10px;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
             z-index: 999;
             display: none;
-            border-top: 2px solid #F3B016;
+            border-top: 2px solid var(--orange);
         }
 
-        .logo {
-            height: 60px;
+        @media (max-width: 768px) {
+            .mobile-sticky-cta { display: block; }
+            body { padding-bottom: 80px; }
+            .whatsapp-float { bottom: 90px; }
         }
 
-        .mobile-sticky-cta .sticky-btn {
+        .logo-container {
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease;
+            background: transparent;
+            padding: 0;
+        }
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        .logo-image {
+            height: 120px; 
+            width: auto;
             display: block;
-            width: 100%;
-            padding: 14px;
-            background: #F3B016;
-            color: #000008;
-            text-align: center;
-            font-weight: 700;
-            font-size: 16px;
-            border-radius: 8px;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
         }
-
-        /* Calendly Modal */
-        .calendly-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            overflow-y: auto;
-        }
-
-        .calendly-modal.active {
-            display: flex;
-        }
-
-        .calendly-modal-content {
-            position: relative;
-            background: white;
-            width: 95%;
-            height: 90vh;
-            max-width: 900px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            margin: auto;
-        }
-
-        .calendly-close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 32px;
-            color: #333;
-            cursor: pointer;
-            z-index: 1001;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: color 0.3s;
-        }
-
-        .calendly-close-btn:hover {
-            color: #F3B016;
-        }
-
-        .calendly-modal-content .calendly-inline-widget {
-            width: 100%;
-            height: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .calendly-modal-content {
-                width: 100%;
-                height: 100vh;
-                border-radius: 0;
-                margin: 0;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .whatsapp-float {
-                bottom: 90px;
-                right: 15px;
-                width: 55px;
-                height: 55px;
-            }
-
-            .mobile-sticky-cta {
-                display: block;
-            }
-
-            body {
-                padding-bottom: 80px;
+        
+        @media (max-width: 640px) {
+            .logo-image {
+                height: 80px;
             }
         }
     </style>
-    
-    <!-- Google Site Verification -->
-    <meta name="google-site-verification" content="abB2_NGLwIxu5GlrNxQGbdpunZJdCZt9ZcQtIhNrQsQ">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K157183XM6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-K157183XM6');
-    </script>
 </head>
-<body>
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="./scratch homepage_files/logo.png" alt="The Coding Mentor Logo" class="logo">
-            </div>
-            <nav class="nav-menu">
-                <a href="#why-coding" class="nav-link">Why Coding</a>
-                <a href="#what-build" class="nav-link">What You'll Build</a>
-                <a href="#teachers" class="nav-link">Our Teachers</a>
-                <a href="#faq" class="nav-link">FAQ</a>
-            </nav>
-        </div>
-    </header>
+<body class="text-slate-700">
 
-    <!-- Achievement Banner -->
-    <div class="achievement-banner">
-        <div class="banner-content">
-            ✨ Transform screen time into coding skills and creative problem-solving
-        </div>
-    </div>
-
-    <!-- Hero Section - Redesigned -->
-    <section class="hero-new">
-        <div class="hero-container">
-            <div class="hero-main">
-                <div class="hero-badge">🎉 TRIAL LESSON • $8 • AGES 9-12</div>
-                <h1 class="hero-title">
-                    Your Child's <span class="accent-yellow">Coding Journey</span><br>
-                    Starts Here
-                </h1>
-                <p class="hero-subtitle">
-                    Try our coding class FREE with a $8 trial lesson. In 90 minutes, watch your child discover the joy of coding and build real projects!
-                </p>
-                <button class="btn btn-primary btn-large" onclick="openWhatsApp()">
-                    Book Your $8 Trial Lesson Now
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-32 items-center">
+                <a href="#" class="logo-container">
+                    <img src="https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-1/629660156_122105772687236208_1468451646687124575_n.jpg?stp=c191.191.1666.1666a_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=p3M6Bfc0mMoQ7kNvwFn7KO8&_nc_oc=AdnMH2v4CaCGLpt676V1SoXc2G47AyaevjxAN6HpuRcM4GM6sFqdbqiZwH3ppUxlOWs&_nc_zt=24&_nc_ht=scontent.fsin14-1.fna&_nc_gid=nO9pYtpigX6JvbnDKD2vUg&oh=00_AfvaSvppGfPACQcCs83z-cmPRpdT3v0uIe-cDGyCiboXuA&oe=6998CD23" 
+                         alt="The Coding Mentor Logo" 
+                         class="logo-image">
+                </a>
+                
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#teachers" class="nav-link">Mentors</a>
+                    <a href="#curriculum" class="nav-link">Curriculum</a>
+                </div>
+                
+                <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-navy text-white px-8 py-3 text-sm shadow-lg border-2 border-navy">
+                    Book $8 Trial
                 </button>
             </div>
-            <div class="hero-highlights">
-                <div class="highlight-card">
-                    <div class="highlight-icon">💻</div>
-                    <div class="highlight-text">
-                        <h4>Focused Curriculum</h4>
-                        <p>Designed to galvanize learning & exploration</p>
+        </div>
+    </nav>
+
+    <section class="hero-pattern text-white py-16 lg:py-28 overflow-hidden border-b border-brand-orange/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative z-10">
+                <div class="inline-block bg-brand-orange text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">
+                    Ages 6 Onwards Special
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-[800] leading-[1.1] mb-6">
+                    Where Young Minds <br><span class="text-brand-orange">Learn to Create</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-md">
+                    Coding enrichment at the highest quality. Join Singapore's 100% Pure Coding School for a hands-on $8 trial lesson.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange hover:bg-orange-hover text-white text-center px-10 py-4 text-sm shadow-xl">
+                        Start $8 Trial Class
+                    </button>
+                    <div class="flex items-center justify-center gap-3 px-6 py-3 bg-white/5 border border-white/20">
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">90-Min Sessions</span>
                     </div>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">👥</div>
-                    <div class="highlight-text">
-                        <h4>Max 3 Students</h4>
-                        <p>Personalized attention</p>
-                    </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white p-2 shadow-2xl">
+                    <img src="scratch homepage_files/trial_picture.jpeg" alt="Happy Kids Coding" class="w-full h-[450px] object-cover">
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">⭐</div>
-                    <div class="highlight-text">
-                        <h4>Expert Teachers</h4>
-                        <p>2-3 years experience + MOE registered instructors</p>
-                    </div>
+                <div class="absolute -top-6 -left-6 bg-brand-orange text-white p-6 shadow-2xl flex flex-col items-center justify-center w-28 h-28 transform -rotate-3">
+                    <span class="font-[800] text-2xl">$8</span>
+                    <span class="text-[10px] font-bold uppercase">Trial</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Coding Section - Card Layout -->
-    <section class="section" id="why-coding">
-        <div class="container">
-            <h2 class="section-title">Why Does Coding Matter for Your Child?</h2>
-            <p class="section-subtitle">More than just technology—it's about building fundamental life skills</p>
+    <section id="about" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="section-tag">About Us</div>
+                    <h2 class="text-4xl font-[800] text-navy mb-8 uppercase tracking-tight">Coding is the <span class="text-brand-orange">New Literacy</span></h2>
+                    <div class="space-y-6 text-slate-600 leading-relaxed">
+                        <p>At <strong>The Coding Mentor</strong>, we believe that coding is a child's playground— a medium for expression, problem-solving, and logic.</p>
+                        <p>Our curriculum is designed specifically for the Singapore context, focusing on developing computational thinking through hands-on project-based learning. This is in line with framework prescribed by the Ministry of Education.</p>
+                        <ul class="space-y-4 font-bold text-navy">
+                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> Small Class Sizes (Max 1:3 Ratio)</li>
+                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> MOE Registered Instructor</li>
+                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> 100% Hands-on Coding from Day 1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white p-8 border-4 border-navy shadow-[20px_20px_0px_#f97316]">
+                    <h3 class="text-2xl font-[800] text-navy mb-4">Our Mission</h3>
+                    <p class="text-slate-500 italic mb-6">"To empower the next generation of budding creators by making technology accessible, fun, and meaningful."</p>
+                    <button onclick="handleWhatsAppRedirect()" class="w-full btn-fun bg-navy text-white py-4 text-sm">
+                        Chat With Us on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teachers" class="py-24 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 relative">
+                <div class="section-tag bg-white/10 text-brand-orange">Our Expert Team</div>
+                <h2 class="text-4xl font-[800] uppercase tracking-tight">Meet Your <br><span class="text-brand-orange">Coding Mentors</span></h2>
+                <div class="flex justify-center gap-4 mt-8">
+                    <button onclick="prevMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">←</button>
+                    <button onclick="nextMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">→</button>
+                </div>
+            </div>
             
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">🧩</div>
-                    <h3>Logical Problem-Solving</h3>
-                    <p>Breaking complex problems into manageable steps. <strong>A skill that lasts a lifetime.</strong></p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">🚀</div>
-                    <h3>Future-Ready Skills</h3>
-                    <p>Prepare your child for a tech-driven world while they're still young and eager to learn.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">🧠</div>
-                    <h3>Growth Mindset</h3>
-                    <p>Learning that mistakes are stepping stones. Resilience and perseverance built naturally.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div id="mentor-container" class="max-w-6xl mx-auto">
+                <div class="mentor-slide active" id="slide-0">
+                    <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
+                        <div class="p-10 lg:p-14 border-r border-white/10">
+                            <div class="flex items-center gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-3xl font-[800] text-white">Mr. Yuriel Operiano</h4>
+                                    <p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange">
+                                <p class="text-slate-200 text-lg italic leading-relaxed">
+                                    "Hello! I recently graduated with a diploma in Cybersecurity & Digital Forensics from NYP. I joined The Coding Mentor because I love to teach, it's been my passion to be a teacher since young. Till then, I'll be tutoring here. :)"
+                                </p>
+                            </div>
 
-    <!-- The Problem Section -->
-    <section class="section section-accent">
-        <div class="container">
-            <div class="problem-box">
-                <h2>Is Screen Time Your Child's Only Tech Interaction?</h2>
-                <p class="problem-intro">While most kids passively watch screens, smart parents are introducing them to <strong>active coding and problem-solving.</strong></p>
-                
-                <div class="stats-row">
-                    <div class="stat-card">
-                        <div class="stat-number">90</div>
-                        <div class="stat-label">Minutes of guided learning</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Leave proud of their work</div>
-                    </div>
-                </div>
-                
-                <p class="problem-cta">The good news? <strong>Your child can start right now!</strong></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What They'll Build Section -->
-    <section class="section" id="what-build">
-        <div class="container">
-            <h2 class="section-title">What Will Your Child Create?</h2>
-            <p class="section-subtitle">Real coding, real projects, real results</p>
-            
-            <div class="project-card-main">
-                <div class="project-content">
-                    <h3>Hands-on learning pedagogy</h3>
-                    <p>Kids will work through logic sequences and test their solutions in real-time. They see immediately what works and what doesn't—that's how real coding works!</p>
-                    
-                    <div class="project-specs">
-                        <div class="spec-item">
-                            <span class="spec-icon">⏱️</span>
-                            <span class="spec-text"><strong>Duration:</strong> 90 minutes of focused learning</span>
+                            <ul class="space-y-4 text-base text-slate-300">
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>3+ Years specializing in coding tuition</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Executive Committee @ NYP's Mentoring Club</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time Director's List Awardee at Nanyang Polytechnic</p></li>
+                            </ul>
                         </div>
-                        <div class="spec-item">
-                            <span class="spec-icon">📊</span>
-                            <span class="spec-text"><strong>Level:</strong> Beginner-friendly</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-icon">🎯</span>
-                            <span class="spec-text"><strong>Skills:</strong> Logic, creativity, systematic thinking, perseverance</span>
+                        <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
+                            <img src="scratch homepage_files/yuriel-picture.JPG" alt="Cybersecurity Logic" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
                         </div>
                     </div>
-                    
-                    <div class="project-outcome">
-                        <strong>✓ They take home:</strong> A working project they created + the confidence to build more!
+                </div>
+
+                <div class="mentor-slide" id="slide-1">
+                    <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
+                        <div class="p-10 lg:p-14 border-r border-white/10">
+                            <div class="flex items-center gap-6 mb-8">
+                                <div>
+                                    <h4 class="text-3xl font-[800] text-white">Mr. Chen Zehua</h4>
+                                    <p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange">
+                                <p class="text-slate-200 text-lg italic leading-relaxed">
+                                    "Hello! I'm Zehua. I believe that every child has a unique way of thinking. My goal is to find that spark and turn it into a passion for building great things with code."
+                                </p>
+                            </div>
+
+                            <ul class="space-y-4 text-base text-slate-300">
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>2+ Years experience as a Coding Tutor</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>1+ Years experience as a Math Tutor</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Vice President of TP's Cybersecurity CCA</p></li>
+                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time School Director's List Awardee</p></li>
+                            </ul>
+                        </div>
+                        <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
+                            <img src="scratch homepage_files/zehua-picture.JPG" alt="Logic and Python" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+                            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Simple Booking Steps -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Your Simple 3-Step Path</h2>
+    <section id="curriculum" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="section-tag">The Learning Journey</div>
+            <h2 class="text-4xl font-[800] text-navy mb-16 uppercase tracking-tight">Choose Your <span class="sketch-underline">Path</span></h2>
             
-            <div class="steps-timeline">
-                <div class="step-item">
-                    <div class="step-marker">
-                        <span class="step-num">1</span>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-fun p-10 flex flex-col text-left">
+                    <div class="w-20 h-20 mb-6 bg-slate-50 flex items-center justify-center p-4">
+                        <img src="scratch homepage_files/scratchjr_logo.png" alt="ScratchJr">
                     </div>
-                    <div class="step-body">
-                        <h4>Book Your $8 Trial Lesson</h4>
-                        <p>Reserve your spot for a 90-minute trial lesson. Contact us via WhatsApp to secure your time.</p>
+                    <div class="mb-4">
+                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">ScratchJr</span>
+                        <h3 class="text-2xl font-[800] text-navy mt-1">Budding Explorers</h3>
                     </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Visual block coding for younger starters to build stories and animations without typing.</p>
+                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Budding Explorers (ScratchJr)')" class="bg-navy text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-brand-orange transition-colors">Enquire Now</button>
                 </div>
-                
-                <div class="timeline-connector"></div>
-                
-                <div class="step-item">
-                    <div class="step-marker">
-                        <span class="step-num">2</span>
+                <div class="card-fun p-10 flex flex-col text-left border-brand-orange border-b-4 bg-orange-50/10 scale-105 shadow-xl">
+                    <div class="w-20 h-20 mb-6 bg-white flex items-center justify-center p-4">
+                        <img src="scratch homepage_files/scratch_logo.png" alt="Scratch">
                     </div>
-                    <div class="step-body">
-                        <h4>Attend Your Trial Lesson</h4>
-                        <p>Come experience real coding! We provide everything—laptops, materials, expert guidance.</p>
+                    <div class="mb-4">
+                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Scratch</span>
+                        <h3 class="text-2xl font-[800] text-navy mt-1">Game Builders</h3>
                     </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">The sweet spot for ages 7-10. Build real games, platformers, and master complex logic.</p>
+                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Game Builders (Scratch)')" class="bg-brand-orange text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-navy transition-colors">Most Popular</button>
                 </div>
-                
-                <div class="timeline-connector"></div>
-                
-                <div class="step-item">
-                    <div class="step-marker">
-                        <span class="step-num">3</span>
+                <div class="card-fun p-10 flex flex-col text-left">
+                    <div class="w-20 h-20 mb-6 bg-slate-50 flex items-center justify-center p-4">
+                        <img src="scratch homepage_files/python_logo.webp" alt="Python">
                     </div>
-                    <div class="step-body">
-                        <h4>Continue Your Journey</h4>
-                        <p>Love the trial? Sign up for ongoing programs with Scratch Jr, Scratch, and Python.</p>
+                    <div class="mb-4">
+                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Python</span>
+                        <h3 class="text-2xl font-[800] text-navy mt-1">Code Pro</h3>
                     </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Transition to text-based code used by engineers at NASA, Google, and Netflix.</p>
+                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Code Pro (Python)')" class="bg-navy text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-brand-orange transition-colors">Advanced Track</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Class Details Cards -->
-    <section class="section section-light">
-        <div class="container">
-            <h2 class="section-title">Class Details</h2>
+    <footer class="bg-navy text-slate-500 py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
             
-            <div class="details-grid">
-                <div class="detail-card">
-                    <div class="detail-icon">⏱️</div>
-                    <h4>Trial Lesson</h4>
-                    <p>$8 trial lesson x 90 minutes</p>
-                </div>
-                <div class="detail-card">
-                    <div class="detail-icon">👥</div>
-                    <h4>Class Size</h4>
-                    <p>Maximum 3 students for personalized attention</p>
-                </div>
-                <div class="detail-card">
-                    <div class="detail-icon">📚</div>
-                    <h4>Curriculum</h4>
-                    <p>Scratch Jr, Scratch, and Python programming</p>
-                </div>
-                <div class="detail-card">
-                    <div class="detail-icon">🏠</div>
-                    <h4>Flexible Location</h4>
-                    <p>Home classroom at tutor's place or at your home</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Meet Your Teachers Section -->
-    <section class="section" id="teachers">
-        <div class="container">
-            <h2 class="section-title">Meet Your Child's Teacher</h2>
-            <p class="section-subtitle">Experienced, patient, and passionate about young learners</p>
-            
-            <div class="teachers-grid">
-                <div class="teacher-card">
-                    <div class="teacher-badge">Early Learning Specialist</div>
-                    <h4>Expert in Child Development</h4>
-                    <p>Our teachers have formal training in childhood development and understand exactly how 9-12 year olds learn best. Patience and encouragement are their superpowers.</p>
-                </div>
-                <div class="teacher-card">
-                    <div class="teacher-badge">Passionate Mentor</div>
-                    <h4>Naturally Gifted with Kids</h4>
-                    <p>Chosen specifically because they light up when working with young learners. They celebrate every small victory and make every child feel capable and excited.</p>
-                </div>
-                <div class="teacher-card">
-                    <div class="teacher-badge">Safety Certified</div>
-                    <h4>Background Checked & Vetted</h4>
-                    <p>Every instructor passes thorough background checks and child safety screening. We take your child's wellbeing as seriously as you do.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why The Coding Mentor Comparison -->
-    <section class="section section-accent">
-        <div class="container">
-            <h2 class="section-title">Why Choose The Coding Mentor?</h2>
-            
-            <div class="comparison-container">
-                <div class="comparison-box">
-                    <h4 class="comparison-title other-title">Other Classes</h4>
-                    <ul class="comparison-list">
-                        <li>One teacher for 8-12 kids</li>
-                        <li>Fast pace, minimal individual attention</li>
-                        <li>Too academic for young learners</li>
-                        <li>More games than real coding</li>
-                        <li>One-size-fits-all approach</li>
-                    </ul>
-                </div>
-                
-                <div class="comparison-divider"></div>
-                
-                <div class="comparison-box">
-                    <h4 class="comparison-title our-title">The Coding Mentor Young Innovators</h4>
-                    <ul class="comparison-list">
-                        <li><strong>Max 3 students per class</strong></li>
-                        <li><strong>Each child moves at their own pace</strong></li>
-                        <li><strong>Age-appropriate, play-based learning</strong></li>
-                        <li><strong>Real coding logic through activities</strong></li>
-                        <li><strong>Personalized feedback & guidance</strong></li>
-                    </ul>
-                </div>
+            <div class="flex justify-center mb-12">
+                <a href="#" class="logo-container">
+                    <img src="https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-1/629660156_122105772687236208_1468451646687124575_n.jpg?stp=c191.191.1666.1666a_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=p3M6Bfc0mMoQ7kNvwFn7KO8&_nc_oc=AdnMH2v4CaCGLpt676V1SoXc2G47AyaevjxAN6HpuRcM4GM6sFqdbqiZwH3ppUxlOWs&_nc_zt=24&_nc_ht=scontent.fsin14-1.fna&_nc_gid=nO9pYtpigX6JvbnDKD2vUg&oh=00_AfvaSvppGfPACQcCs83z-cmPRpdT3v0uIe-cDGyCiboXuA&oe=6998CD23" 
+                         alt="The Coding Mentor Logo" 
+                         class="logo-image">
+                </a>
             </div>
             
-            <p class="insight-text">
-                <strong>Parent Insight:</strong> Ages 9-12 is the sweet spot for learning. Young enough to be excited, old enough to understand sequences and logic. This is the time!
-            </p>
-        </div>
-    </section>
-
-    <!-- Trust Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Why Families Trust The Coding Mentor</h2>
-            
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-icon">💼</div>
-                    <h4>Tech-Savvy Parents</h4>
-                    <p>Parents in tech trust us to give their kids a real head start in coding and problem-solving.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">🏫</div>
-                    <h4>Recommended by Schools</h4>
-                    <p>Local kindergartens and preschools recommend our program to parents seeking early learning support.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">⭐</div>
-                    <h4>Built on Results</h4>
-                    <p>We measure success by student confidence and growth, not competitions. Parents see real transformation.</p>
-                </div>
+            <div class="flex justify-center gap-6 mb-10">
+                <a href="https://www.facebook.com/TheCodingMentorSG/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/thecodingmentorsg/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    Instagram
+                </a>
             </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="section section-light" id="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Isn't 9 too young to code?</h4>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely not! 9-year-olds naturally understand sequences and logic through play. This is actually the perfect age to build foundational thinking skills before formal education begins.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>What if my child has never seen code before?</h4>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Perfect! We design everything from scratch for beginners. No prior experience needed. Our visual, interactive approach makes it feel more like a game than a tech class.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Can I stay and watch the class?</h4>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We ask parents to drop off so children can focus without distractions. But we're happy to chat after class and give you detailed feedback on how your child did!</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Where exactly in Singapore?</h4>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Classes are held at home classroom at tutor's place or at your home for your comfort. We offer flexible arrangements to suit your family's needs.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Can I get a refund if I can't make it?</h4>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>The booking is non-refundable, but you can reschedule for free within a month with 24 hours' notice. If we cancel due to unforeseen circumstances, full refund guaranteed.</p>
-                    </div>
-                </div>
+            <div class="text-[10px] font-bold uppercase tracking-[3px] mb-2">
+                thecodingmentorsg@gmail.com | +65 9774 4861
             </div>
-        </div>
-    </section>
 
-    <!-- Final CTA Section -->
-    <section class="cta-final">
-        <div class="container">
-            <h2>Ready to Try? Book Your $8 Trial Lesson Today</h2>
-            <p>90 minutes to discover if coding is right for your child. Small classes, expert teachers, real projects.</p>
-            <button class="btn btn-primary btn-large btn-white" onclick="openWhatsApp()">
-                Reserve Trial Lesson Now
-            </button>
-            <div class="guarantee-text">
-                ✓ Only $8 for 90-minute trial • Max 3 students • Expert MOE-registered teachers
+            <div class="text-[10px] font-bold uppercase tracking-[3px]">
+                © 2026 The Coding Mentor Singapore
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 The Coding Mentor (TCM)</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <button class="whatsapp-float" onclick="gtag('event', 'whatsapp_click', {'page': 'junior_coders', 'ref': 'jc_web'}); openWhatsApp();">
-        <img src="./scratch homepage_files/whatsapp.png" alt="WhatsApp" width="32" height="32">
-    </button>
+    <a href="javascript:void(0)" onclick="handleWhatsAppRedirect()" class="whatsapp-float">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.7 69.4 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.6-16.5-14.7-27.6-32.8-30.8-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.6-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
 
-    <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <button class="sticky-btn" onclick="openWhatsApp()">
-            Book $8 Trial Lesson →
-        </button>
+        <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange text-white w-full py-4 text-center">Book $8 Trial Lesson</button>
     </div>
 
-    <!-- Calendly Modal -->
-    <div id="calendly-modal" class="calendly-modal">
-        <div class="calendly-modal-content">
-            <button class="calendly-close-btn" onclick="closeCalendlyModal()">&times;</button>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/thecodingmentorsg/30min"></div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <script>
-        function openCalendlyModal() {
-            document.getElementById('calendly-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        const WHATSAPP_NUMBER = "6597744861";
+        const DEFAULT_MESSAGE = "Hi! I'm interested to book an $8 trial class with The Coding Mentor";
 
-        function closeCalendlyModal() {
-            document.getElementById('calendly-modal').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+        function handleWhatsAppRedirect(customText = null) {
+            fbq('track', 'StartTrial'); 
+            // --------------------------------
 
-        function openWhatsApp() {
-            // Track the click event with detailed metrics
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'whatsapp_click', {
-                    'event_category': 'engagement',
-                    'event_label': 'trial_lesson_inquiry',
-                    'value': 1
-                });
+            const text = customText || DEFAULT_MESSAGE;
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
+            window.location.href = whatsappUrl;
             }
-            
-            // Open WhatsApp
-            window.open('https://wa.me/6584059177', '_blank');
+
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.mentor-slide');
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.getElementById(`slide-${index}`).classList.add('active');
         }
 
-        // Close modal when clicking outside the content
-        document.getElementById('calendly-modal').addEventListener('click', function(event) {
-            if (event.target === this) {
-                closeCalendlyModal();
-            }
-        });
+        function nextMentor() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
 
-        // FAQ Toggle Functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', function() {
-                const item = this.parentElement;
-                item.classList.toggle('active');
-                const toggle = this.querySelector('.faq-toggle');
-                toggle.textContent = item.classList.contains('active') ? '−' : '+';
-            });
-        });
+        function prevMentor() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
     </script>
 </body>
 </html>
