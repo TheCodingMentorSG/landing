@@ -1,456 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=yes">
-    
-    <title>The Coding Mentor | Coding Enrichment Classes|</title>
-    <meta name="description" content="Learn coding with Scratch Jr, Scratch, and Python at The Coding Mentor. Small classes, expert MOE registered instructors in Singapore.">
-
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '25782817511360658');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=25782817511360658&ev=PageView&noscript=1"
-    /></noscript>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --navy: #0a192f;
-            --orange: #f97316;
-            --orange-light: #fff7ed;
-            --orange-hover: #ea580c;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #ffffff;
-        }
-        * { border-radius: 0 !important; }
-
-        .bg-navy { background-color: var(--navy); }
-        .text-navy { color: var(--navy); }
-        .bg-brand-orange { background-color: var(--orange); }
-        .text-brand-orange { color: var(--orange); }
-        
-        .hero-pattern {
-            background-color: var(--navy);
-            background-image: radial-gradient(rgba(249, 115, 22, 0.08) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-        
-        .btn-fun {
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 800;
-            display: inline-block;
-            cursor: pointer;
-            text-align: center;
-        }
-        .btn-fun:hover {
-            transform: translateY(-2px);
-            box-shadow: 4px 4px 0px var(--orange);
-        }
-
-        .nav-link {
-            font-size: 0.85rem; 
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #64748b; 
-            transition: all 0.2s ease;
-            padding: 8px 12px;
-            position: relative;
-        }
-        .nav-link:hover {
-            color: var(--orange);
-            background-color: var(--orange-light);
-        }
-
-        .card-fun {
-            border: 1px solid #e2e8f0;
-            background: white;
-            transition: all 0.3s ease;
-        }
-        .card-fun:hover {
-            border-color: var(--orange);
-            box-shadow: 10px 10px 0px var(--navy);
-        }
-
-        .section-tag {
-            background: var(--orange-light);
-            color: var(--orange);
-            padding: 4px 16px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        .sketch-underline {
-            position: relative;
-            display: inline-block;
-        }
-        .sketch-underline::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--orange);
-            opacity: 0.3;
-        }
-
-        .mentor-slide {
-            display: none;
-            animation: fadeIn 0.4s ease-out forwards;
-        }
-        .mentor-slide.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25d366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 998;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-sticky-cta {
-            position: fixed;
-            bottom: 0; left: 0; right: 0;
-            background: white;
-            padding: 10px;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            z-index: 999;
-            display: none;
-            border-top: 2px solid var(--orange);
-        }
-
-        @media (max-width: 768px) {
-            .mobile-sticky-cta { display: block; }
-            body { padding-bottom: 80px; }
-            .whatsapp-float { bottom: 90px; }
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            transition: transform 0.2s ease;
-            background: transparent;
-            padding: 0;
-        }
-        .logo-container:hover {
-            transform: scale(1.05);
-        }
-        .logo-image {
-            height: 120px; 
-            width: auto;
-            display: block;
-        }
-        
-        @media (max-width: 640px) {
-            .logo-image {
-                height: 80px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="telephone=yes">
+<meta name="description" content="Learn coding with Scratch Jr, Scratch, and Python at The Coding Mentor. Small classes, expert MOE registered instructors in Singapore.">
+<title>The Coding Mentor | Coding Enrichment Classes|</title>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','25782817511360658');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=25782817511360658&ev=PageView&noscript=1"></noscript>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{'brand-orange':'#f97316','navy':'#0a192f'}}}}</script>
+<style>
+:root{--navy:#0a192f;--orange:#f97316;--orange-light:#fff7ed;--orange-hover:#ea580c;--lime:#bef264}
+body{font-family:'Poppins',sans-serif;scroll-behavior:smooth;background-color:#fff}
+*{border-radius:0!important}
+.bg-navy{background-color:var(--navy)}.text-navy{color:var(--navy)}.bg-brand-orange{background-color:var(--orange)}.text-brand-orange{color:var(--orange)}
+.hero-pattern{background-color:var(--navy);background-image:radial-gradient(rgba(249,115,22,.08) 1px,transparent 1px);background-size:30px 30px}
+.btn-fun{transition:all .2s ease;text-transform:uppercase;letter-spacing:1px;font-weight:800;display:inline-block;cursor:pointer;text-align:center}
+.btn-fun:hover{transform:translateY(-2px);box-shadow:4px 4px 0px var(--orange)}
+.nav-link{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b;transition:all .2s ease;padding:8px 12px;position:relative}
+.nav-link:hover{color:var(--orange);background-color:var(--orange-light)}
+.course-list-item{display:flex;flex-direction:column;padding:1.5rem;background:white;border:1px solid #e2e8f0;transition:all .3s ease;position:relative;overflow:hidden;height:100%;z-index:10}
+.course-list-item:not(.arrow-card):hover{border-color:var(--orange);transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.course-tag{font-size:.6rem;font-weight:800;padding:2px 8px;text-transform:uppercase;letter-spacing:1px}
+.card-fun{border:1px solid #e2e8f0;background:white;transition:all .3s ease}
+.card-fun:hover{border-color:var(--orange);box-shadow:10px 10px 0px var(--navy)}
+.section-tag{background:var(--orange-light);color:var(--orange);padding:4px 16px;font-size:.75rem;font-weight:700;text-transform:uppercase;display:inline-block;margin-bottom:1rem}
+.sketch-underline{position:relative;display:inline-block}
+.sketch-underline::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:4px;background:var(--orange);opacity:.3}
+.mentor-slide{display:none;animation:fadeIn .4s ease-out forwards}
+.mentor-slide.active{display:block}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:998;text-decoration:none;transition:transform .3s ease}
+.mobile-sticky-cta{position:fixed;bottom:0;left:0;right:0;background:white;padding:10px;box-shadow:0 -2px 10px rgba(0,0,0,.1);z-index:999;display:none;border-top:2px solid var(--orange)}
+@media(max-width:768px){.mobile-sticky-cta{display:block}body{padding-bottom:80px}.whatsapp-float{bottom:90px}}
+.logo-container{display:flex;align-items:center;transition:transform .2s ease;background:transparent;padding:0}
+.logo-container:hover{transform:scale(1.05)}
+.logo-image{height:120px;width:auto;display:block}
+@media(max-width:640px){.logo-image{height:80px}}
+@media(min-width:768px){
+.arrow-card{position:relative;clip-path:polygon(0% 0%,90% 0%,100% 50%,90% 100%,0% 100%,10% 50%);padding-left:3rem!important;padding-right:3rem!important;margin-right:-2rem;border:none!important;background:#f8fafc}
+.arrow-card:first-child{clip-path:polygon(0% 0%,90% 0%,100% 50%,90% 100%,0% 100%);padding-left:1.5rem!important}
+.arrow-card:last-child{clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 100%,10% 50%);margin-right:0}
+.arrow-card:hover{background:white;z-index:20;transform:scale(1.02);box-shadow:0 20px 25px -5px rgba(0,0,0,.1)}
+.arrow-card.active-arrow{background:var(--orange-light);border-bottom:4px solid var(--orange)!important}}
+</style>
 </head>
 <body class="text-slate-700">
 
-    <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between h-32 items-center">
-                <a href="#" class="logo-container">
-                    <img src="./scratch homepage_files/logo.png" 
-                         alt="The Coding Mentor Logo" 
-                         class="logo-image">
-                </a>
-                
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="#about" class="nav-link">About Us</a>
-                    <a href="#teachers" class="nav-link">Mentors</a>
-                    <a href="#curriculum" class="nav-link">Curriculum</a>
-                </div>
-                
-                <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-navy text-white px-8 py-3 text-sm shadow-lg border-2 border-navy">
-                    Get Started
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero-pattern text-white py-16 lg:py-28 overflow-hidden border-b border-brand-orange/30">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="relative z-10">
-                <div class="inline-block bg-brand-orange text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">
-                    Ages 6 &amp; Above
-                </div>
-                <h1 class="text-5xl lg:text-7xl font-[800] leading-[1.1] mb-6">
-                    Where Young Minds <br><span class="text-brand-orange">Learn to Create</span>
-                </h1>
-                <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-md">
-                    Coding enrichment at the highest quality. Join Singapore's 100% Pure Coding School for hands-on, project-based lessons.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange hover:bg-orange-hover text-white text-center px-10 py-4 text-sm shadow-xl">
-                        Enrol Now
-                    </button>
-                    <div class="flex items-center justify-center gap-3 px-6 py-3 bg-white/5 border border-white/20">
-                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">90-Min Sessions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="bg-white p-2 shadow-2xl">
-                    <img src="scratch homepage_files/trial_picture.jpeg" alt="Happy Kids Coding" class="w-full h-[450px] object-cover">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div class="section-tag">About Us</div>
-                    <h2 class="text-4xl font-[800] text-navy mb-8 uppercase tracking-tight">Coding is the <span class="text-brand-orange">New Literacy</span></h2>
-                    <div class="space-y-6 text-slate-600 leading-relaxed">
-                        <p>At <strong>The Coding Mentor</strong>, we believe that coding is a child's playground— a medium for expression, problem-solving, and logic.</p>
-                        <p>Our curriculum is designed specifically for the Singapore context, focusing on developing computational thinking through hands-on project-based learning. This is in line with framework prescribed by the Ministry of Education.</p>
-                        <ul class="space-y-4 font-bold text-navy">
-                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> Small Class Sizes (Max 1:3 Ratio)</li>
-                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> MOE Registered Instructor</li>
-                            <li class="flex items-center gap-3"><span class="text-brand-orange text-xl">✓</span> 100% Hands-on Coding from Day 1</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bg-white p-8 border-4 border-navy shadow-[20px_20px_0px_#f97316]">
-                    <h3 class="text-2xl font-[800] text-navy mb-4">Our Mission</h3>
-                    <p class="text-slate-500 italic mb-6">"To empower the next generation of budding creators by making technology accessible, fun, and meaningful."</p>
-                    <button onclick="handleWhatsAppRedirect()" class="w-full btn-fun bg-navy text-white py-4 text-sm">
-                        Chat With Us on WhatsApp
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="teachers" class="py-24 bg-navy text-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16 relative">
-                <div class="section-tag bg-white/10 text-brand-orange">Our Expert Team</div>
-                <h2 class="text-4xl font-[800] uppercase tracking-tight">Meet Your <br><span class="text-brand-orange">Coding Mentors</span></h2>
-                <div class="flex justify-center gap-4 mt-8">
-                    <button onclick="prevMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">←</button>
-                    <button onclick="nextMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">→</button>
-                </div>
-            </div>
-            
-            <div id="mentor-container" class="max-w-6xl mx-auto">
-                <div class="mentor-slide active" id="slide-0">
-                    <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
-                        <div class="p-10 lg:p-14 border-r border-white/10">
-                            <div class="flex items-center gap-6 mb-8">
-                                <div>
-                                    <h4 class="text-3xl font-[800] text-white">Mr. Yuriel Operiano</h4>
-                                    <p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange">
-                                <p class="text-slate-200 text-lg italic leading-relaxed">
-                                    "Hello! I recently graduated with a diploma in Cybersecurity & Digital Forensics from NYP. I joined The Coding Mentor because I love to teach, it's been my passion to be a teacher since young. Till then, I'll be tutoring here. :)"
-                                </p>
-                            </div>
-
-                            <ul class="space-y-4 text-base text-slate-300">
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>3+ Years specializing in coding tuition</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Executive Committee @ NYP's Mentoring Club</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time Director's List Awardee at Nanyang Polytechnic</p></li>
-                            </ul>
-                        </div>
-                        <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
-                            <img src="scratch homepage_files/yuriel-picture.JPG" alt="Cybersecurity Logic" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
-                            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mentor-slide" id="slide-1">
-                    <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
-                        <div class="p-10 lg:p-14 border-r border-white/10">
-                            <div class="flex items-center gap-6 mb-8">
-                                <div>
-                                    <h4 class="text-3xl font-[800] text-white">Mr. Chen Zehua</h4>
-                                    <p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange">
-                                <p class="text-slate-200 text-lg italic leading-relaxed">
-                                    "Hello! I'm Zehua. I believe that every child has a unique way of thinking. My goal is to find that spark and turn it into a passion for building great things with code."
-                                </p>
-                            </div>
-
-                            <ul class="space-y-4 text-base text-slate-300">
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>2+ Years experience as a Coding Tutor</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>1+ Years experience as a Math Tutor</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Vice President of TP's Cybersecurity CCA</p></li>
-                                <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time School Director's List Awardee</p></li>
-                            </ul>
-                        </div>
-                        <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
-                            <img src="scratch homepage_files/zehua-picture.JPG" alt="Logic and Python" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
-                            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="curriculum" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            <div class="section-tag">The Learning Journey</div>
-            <h2 class="text-4xl font-[800] text-navy mb-16 uppercase tracking-tight">Choose Your <span class="sketch-underline">Path</span></h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card-fun p-10 flex flex-col text-left">
-                    <div class="w-20 h-20 mb-6 bg-slate-50 flex items-center justify-center p-4">
-                        <img src="scratch homepage_files/scratchjr_logo.png" alt="ScratchJr">
-                    </div>
-                    <div class="mb-4">
-                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">ScratchJr</span>
-                        <h3 class="text-2xl font-[800] text-navy mt-1">Budding Explorers</h3>
-                    </div>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Visual block coding for younger starters to build stories and animations without typing.</p>
-                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Budding Explorers (ScratchJr)')" class="bg-navy text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-brand-orange transition-colors">Enquire Now</button>
-                </div>
-                <div class="card-fun p-10 flex flex-col text-left border-brand-orange border-b-4 bg-orange-50/10 scale-105 shadow-xl">
-                    <div class="w-20 h-20 mb-6 bg-white flex items-center justify-center p-4">
-                        <img src="scratch homepage_files/scratch_logo.png" alt="Scratch">
-                    </div>
-                    <div class="mb-4">
-                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Scratch</span>
-                        <h3 class="text-2xl font-[800] text-navy mt-1">Game Builders</h3>
-                    </div>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">The sweet spot for ages 7-10. Build real games, platformers, and master complex logic.</p>
-                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Game Builders (Scratch)')" class="bg-brand-orange text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-navy transition-colors">Most Popular</button>
-                </div>
-                <div class="card-fun p-10 flex flex-col text-left">
-                    <div class="w-20 h-20 mb-6 bg-slate-50 flex items-center justify-center p-4">
-                        <img src="scratch homepage_files/python_logo.webp" alt="Python">
-                    </div>
-                    <div class="mb-4">
-                        <span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Python</span>
-                        <h3 class="text-2xl font-[800] text-navy mt-1">Code Pro</h3>
-                    </div>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">Transition to text-based code used by engineers at NASA, Google, and Netflix.</p>
-                    <button onclick="handleWhatsAppRedirect('Hi! Interested in Code Pro (Python)')" class="bg-navy text-white p-3 text-center text-[10px] font-bold uppercase hover:bg-brand-orange transition-colors">Advanced Track</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-navy text-slate-500 py-20 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            
-            <!-- <div class="flex justify-center mb-12">
-                <a href="#" class="logo-container">
-                    <img src="./scratch homepage_files/logo.png" 
-                         alt="The Coding Mentor Logo" 
-                         class="logo-image">
-                </a>
-            </div> -->
-            
-            <div class="flex justify-center gap-6 mb-10">
-                <a href="https://www.facebook.com/TheCodingMentorSG/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
-                    Facebook
-                </a>
-                <a href="https://www.instagram.com/thecodingmentorsg/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    Instagram
-                </a>
-            </div>
-
-            <div class="text-[10px] font-bold uppercase tracking-[3px] mb-2">
-                thecodingmentorsg@gmail.com | +65 9774 4861
-            </div>
-
-            <div class="text-[10px] font-bold uppercase tracking-[3px]">
-                © 2026 The Coding Mentor Singapore
-            </div>
-        </div>
-    </footer>
-
-    <a href="javascript:void(0)" onclick="handleWhatsAppRedirect()" class="whatsapp-float">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.7 69.4 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.6-16.5-14.7-27.6-32.8-30.8-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.6-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-    </a>
-
-    <div class="mobile-sticky-cta">
-        <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange text-white w-full py-4 text-center">Enrol Now</button>
+<nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex justify-between h-32 items-center">
+      <a href="#" class="logo-container"><img src="./scratch homepage_files/logo.png" alt="The Coding Mentor Logo" class="logo-image"></a>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#teachers" class="nav-link">Mentors</a>
+        <a href="#curriculum" class="nav-link">Curriculum</a>
+      </div>
+      <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-navy text-white px-8 py-3 text-sm shadow-lg border-2 border-navy">Get Started</button>
     </div>
+  </div>
+</nav>
 
-    <script>
-        const WHATSAPP_NUMBER = "6597744861";
-        const DEFAULT_MESSAGE = "Hi! I'm interested to learn more about The Coding Mentor's classes";
+<section class="hero-pattern text-white py-16 lg:py-28 overflow-hidden border-b border-brand-orange/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="relative z-10">
+      <div class="inline-block bg-brand-orange text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Ages 6 &amp; Above</div>
+      <h1 class="text-5xl lg:text-7xl font-[800] leading-[1.1] mb-6">Where Young Minds <br><span class="text-brand-orange">Learn to Create</span></h1>
+      <p class="text-lg text-slate-300 mb-10 leading-relaxed max-w-md">Coding enrichment at the highest quality. Join Singapore's 100% Pure Coding School for hands-on, project-based lessons.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange hover:bg-orange-hover text-white text-center px-10 py-4 text-sm shadow-xl">Enrol Now</button>
+        <div class="flex items-center justify-center gap-3 px-6 py-3 bg-white/5 border border-white/20"><span class="text-xs font-bold uppercase tracking-widest text-slate-300">90-Min Sessions</span></div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="bg-white p-2 shadow-2xl"><img src="scratch homepage_files/trial_picture.jpeg" alt="Happy Kids Coding" class="w-full h-[450px] object-cover"></div>
+    </div>
+  </div>
+</section>
 
-        function handleWhatsAppRedirect(customText = null) {
-            fbq('track', 'Contact'); 
-            // --------------------------------
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="section-tag">Our Story</div>
+      <h2 class="text-4xl font-[800] text-navy mb-6 uppercase tracking-tight">From Classmates to <span class="text-brand-orange">Mentors</span></h2>
+      <p class="text-slate-500 leading-relaxed italic text-lg">"We didn't just want to teach code; we wanted to journey and nurture a generation of creative thinkers and innovators!"</p>
+    </div>
+    <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+      <div class="lg:col-span-7 space-y-12">
+        <div>
+          <h3 class="text-2xl font-[800] text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 bg-brand-orange text-white flex items-center justify-center text-sm">01</span>Why We Started</h3>
+          <p class="text-slate-600 leading-relaxed">The prologue of this story stems from a shared vision between Polytechnic students after graduation. Equipped with IT skills and a budding passion to teach and inspire, we coined the question: How do we create a platform to 
+            inspire learning in Singapore, while still remaining close to our passions in Information Technology? This thinking led us to our answer: The Coding Mentor.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-[800] text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 bg-brand-orange text-white flex items-center justify-center text-sm">02</span>Our Journey and Goal</h3>
+          <p class="text-slate-600 leading-relaxed">In this day and age, technology is the new literacy. Our mission is to delve deep into the world of coding with kids and teens, transforming them from passive consumers of technology into active architects of it. We provide a space where "trial and error" is celebrated and learning is synonymous with play, ensuring students are ready for a digital future.</p>
+        </div>
+        <div class="p-8 bg-slate-50 border-l-4 border-navy">
+          <p class="text-slate-600 leading-relaxed italic">By bridging the gap between academic theory and practical application, we help our students see code not just as lines on a screen, but as a tool to solve real-world problems.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-5 h-full">
+        <div class="bg-navy p-10 text-white relative h-full flex flex-col justify-center">
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-orange/20 -z-10"></div>
+          <h4 class="text-xl font-[800] mb-8 uppercase tracking-widest text-brand-orange">Why we're different</h4>
+          <ul class="space-y-10">
+            <li class="flex gap-4"><div class="shrink-0 w-10 h-10 border border-white/20 flex items-center justify-center font-bold text-brand-orange">✓</div><div><p class="font-bold text-sm uppercase">Curated Curriculum</p><p class="text-xs text-slate-400 mt-1">Designed for the Singapore context, aligning with MOE frameworks while maintaining a project-first approach.</p></div></li>
+            <li class="flex gap-4"><div class="shrink-0 w-10 h-10 border border-white/20 flex items-center justify-center font-bold text-brand-orange">✓</div><div><p class="font-bold text-sm uppercase">The 1:3 Advantage</p><p class="text-xs text-slate-400 mt-1">Our focused ratio ensures personalized mentorship for students to master complex logic.</p></div></li>
+            <li class="flex gap-4"><div class="shrink-0 w-10 h-10 border border-white/20 flex items-center justify-center font-bold text-brand-orange">✓</div><div><p class="font-bold text-sm uppercase">100% Pure Coding</p><p class="text-xs text-slate-400 mt-1">100% Pure Coding for logic, problem solving, and creation.</p></div></li>
+            <li class="flex gap-4"><div class="shrink-0 w-10 h-10 border border-white/20 flex items-center justify-center font-bold text-brand-orange">✓</div><div><p class="font-bold text-sm uppercase">MOE-Registered Team</p><p class="text-xs text-slate-400 mt-1">We are MOE-Registred Instructors</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            const text = customText || DEFAULT_MESSAGE;
-            const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
-            window.location.href = whatsappUrl;
-            }
+<section id="teachers" class="py-24 bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16 relative">
+      <div class="section-tag bg-white/10 text-brand-orange">Our Team</div>
+      <h2 class="text-4xl font-[800] uppercase tracking-tight">Meet Your <br><span class="text-brand-orange">Coding Mentors</span></h2>
+      <div class="flex justify-center gap-4 mt-8">
+        <button onclick="prevMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">←</button>
+        <button onclick="nextMentor()" class="w-12 h-12 border border-white/20 flex items-center justify-center hover:bg-brand-orange transition-all">→</button>
+      </div>
+    </div>
+    <div id="mentor-container" class="max-w-6xl mx-auto">
+      <div class="mentor-slide active" id="slide-0">
+        <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
+          <div class="p-10 lg:p-14 border-r border-white/10">
+            <div class="flex items-center gap-6 mb-8"><div><h4 class="text-3xl font-[800] text-white">Mr. Yuriel Operiano</h4><p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p></div></div>
+            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange"><p class="text-slate-200 text-lg italic leading-relaxed">"Hello! I recently graduated with a diploma in Cybersecurity & Digital Forensics from NYP. I founded The Coding Mentor because I love to teach (and coding too!). Being here has given me the space and direction
+                I need to explore my passions freely. I aim not only to teach, but to impact every student I have the honor to journey with. :)"</p></div>
+            <ul class="space-y-4 text-base text-slate-300">
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>3+ Years specializing in coding tuition</p></li>
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Executive Committee @ NYP's Mentoring Club</p></li>
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time Director's List Awardee at Nanyang Polytechnic</p></li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
+            <img src="scratch homepage_files/yuriel-picture.JPG" alt="Cybersecurity Logic" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mentor-slide" id="slide-1">
+        <div class="grid lg:grid-cols-2 gap-0 bg-white/5 border border-white/10 overflow-hidden">
+          <div class="p-10 lg:p-14 border-r border-white/10">
+            <div class="flex items-center gap-6 mb-8"><div><h4 class="text-3xl font-[800] text-white">Mr. Chen Zehua</h4><p class="text-sm text-brand-orange font-bold uppercase tracking-widest">Mentor</p></div></div>
+            <div class="mb-8 p-4 bg-brand-orange/10 border-l-4 border-brand-orange"><p class="text-slate-200 text-lg italic leading-relaxed">"Hello! I'm Zehua. Since I started teaching, I've come to believe that every child has a unique way of thinking. My goal is to find that spark and turn it into a passion for building great things with code."</p></div>
+            <ul class="space-y-4 text-base text-slate-300">
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>2+ Years experience as a Coding Tutor</p></li>
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>1+ Years experience as a Math Tutor</p></li>
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Vice President of TP's Cybersecurity CCA</p></li>
+              <li class="flex items-start gap-4"><span class="w-1.5 h-1.5 bg-brand-orange mt-2 shrink-0"></span><p>Two-time School Director's List Awardee</p></li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden group w-full lg:w-[500px] h-[500px] mx-auto">
+            <img src="scratch homepage_files/zehua-picture.JPG" alt="Logic and Python" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100">
+            <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-all"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        let currentSlide = 0;
-        const totalSlides = 2;
+<section id="curriculum" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="text-orange-600 font-bold uppercase tracking-widest text-xs">Learning Roadmap</span>
+      <h2 class="text-3xl font-[800] text-[#0a192f] mt-2 uppercase">Course Modules</h2>
+      <p class="text-slate-500 mt-2 text-sm">A structured progression from fundamentals to professional mastery.</p>
+    </div>
+    <div class="space-y-16">
+      <div>
+        <div class="flex items-center gap-4 mb-12"><span class="bg-[#0a192f] text-white px-4 py-1.5 font-bold text-xs uppercase tracking-widest">Core (Ages 7 - 11)</span><div class="h-px bg-slate-200 flex-grow"></div></div>
+        <div class="grid md:grid-cols-3 gap-y-4 md:gap-y-0">
+          <div class="course-list-item arrow-card p-10 flex flex-col text-left group">
+            <div class="w-16 h-16 mb-6 bg-white shadow-sm flex items-center justify-center p-3 rounded-full mx-auto md:mx-0"><img src="../src/scratch homepage_files/scratchjr_logo.png" alt="ScratchJr" class="w-full" onerror="this.src='https://placehold.co/80x80?text=Jr'"></div>
+            <div class="mb-4"><span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Module 01</span><h3 class="text-xl font-[800] text-navy mt-1">ScratchJr</h3></div>
+            <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow">Visual block coding for younger starters to build stories and animations without typing.</p>
+            <button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in ScratchJr'" class="text-navy font-bold text-[10px] uppercase border-b-2 border-navy self-start hover:text-brand-orange hover:border-brand-orange transition-colors pb-1">Enquire Now</button>
+          </div>
+          <div class="course-list-item arrow-card active-arrow p-10 flex flex-col text-left group z-20">
+            <div class="w-16 h-16 mb-6 bg-white shadow-sm flex items-center justify-center p-3 rounded-full mx-auto md:mx-0"><img src="../src/scratch homepage_files/scratch_logo.png" alt="Scratch" class="w-full" onerror="this.src='https://placehold.co/80x80?text=S'"></div>
+            <div class="mb-4"><span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Module 02</span><h3 class="text-xl font-[800] text-navy mt-1">Scratch Coding</h3></div>
+            <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow">The sweet spot for this age range. Build real games, platformers, and master complex logic.</p>
+            <button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in Scratch'" class="bg-brand-orange text-white px-4 py-2 text-center text-[10px] font-bold uppercase self-start hover:bg-navy transition-colors">Most Popular</button>
+          </div>
+          <div class="course-list-item arrow-card p-10 flex flex-col text-left group">
+            <div class="w-16 h-16 mb-6 bg-white shadow-sm flex items-center justify-center p-3 rounded-full mx-auto md:mx-0"><img src="../src/scratch homepage_files/python_logo.webp" alt="Python" class="w-full" onerror="this.src='https://placehold.co/80x80?text=Py'"></div>
+            <div class="mb-4"><span class="text-[10px] font-[800] text-brand-orange uppercase tracking-widest">Module 03</span><h3 class="text-xl font-[800] text-navy mt-1">Python Coding</h3></div>
+            <p class="text-slate-500 text-xs leading-relaxed mb-8 flex-grow">Transition to popular text-based coding language, Python, used by engineers at NASA, Google, and Netflix.</p>
+            <button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in Python'" class="text-navy font-bold text-[10px] uppercase border-b-2 border-navy self-start hover:text-brand-orange hover:border-brand-orange transition-colors pb-1">Advanced Track</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-4 mb-8"><span class="bg-[#0a192f] text-white px-4 py-1.5 font-bold text-xs uppercase tracking-widest">Pathways (Ages 12+)</span><div class="h-px bg-slate-200 flex-grow"></div></div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="course-list-item group !flex-row !items-start">
+            <div class="mr-4 mt-1"><span class="text-xl font-bold text-slate-200 group-hover:text-orange-500">04</span></div>
+            <div class="flex-grow"><div class="flex flex-wrap items-center gap-2 mb-1"><h3 class="text-lg font-bold text-[#0a192f]">Web Development</h3><span class="course-tag bg-orange-100 text-orange-700">HTML / CSS / JS</span></div><p class="text-xs text-slate-500 leading-relaxed mb-3">Building the internet. Learn front-end architecture to create responsive, interactive websites.</p><button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in Web Development'" class="text-orange-600 font-bold text-[10px] uppercase tracking-wider hover:underline">Details →</button></div>
+          </div>
+          <div class="course-list-item group !flex-row !items-start">
+            <div class="mr-4 mt-1"><span class="text-xl font-bold text-slate-200 group-hover:text-orange-500">05</span></div>
+            <div class="flex-grow"><div class="flex flex-wrap items-center gap-2 mb-1"><h3 class="text-lg font-bold text-[#0a192f]">Game Development</h3><span class="course-tag bg-red-100 text-red-700">Roblox / Lua</span></div><p class="text-xs text-slate-500 leading-relaxed mb-3">Creating 3D worlds and multiplayer mechanics. Focuses on Lua scripting and game design.</p><button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in Game Development'" class="text-orange-600 font-bold text-[10px] uppercase tracking-wider hover:underline">Details →</button></div>
+          </div>
+          <div class="course-list-item group !flex-row !items-start md:col-span-2">
+            <div class="mr-4 mt-1"><span class="text-xl font-bold text-slate-200 group-hover:text-orange-500">06</span></div>
+            <div class="flex-grow"><div class="flex flex-wrap items-center gap-2 mb-1"><h3 class="text-lg font-bold text-[#0a192f]">Cybersecurity</h3><span class="course-tag bg-yellow-100 text-yellow-700">System Coding</span></div><p class="text-xs text-slate-500 leading-relaxed mb-3">Understanding digital defense. Introduction to system coding and blue-team basics. Perfect for advanced students.</p><button onclick="window.location.href='https://wa.me/6597744861?text=Hi! Interested in Cybersecurity'" class="text-orange-600 font-bold text-[10px] uppercase tracking-wider hover:underline">Details →</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.mentor-slide');
-            slides.forEach(slide => slide.classList.remove('active'));
-            document.getElementById(`slide-${index}`).classList.add('active');
-        }
+<section id="workshops" class="py-24 bg-navy text-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative order-2 lg:order-1">
+        <div class="bg-white p-2 shadow-2xl rotate-1"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Education Workshop" class="w-full h-[400px] object-cover grayscale hover:grayscale-0 transition-all duration-500"></div>
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-32 h-10 bg-brand-orange/40 backdrop-blur-sm -rotate-1"></div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="section-tag bg-white/10 text-brand-orange">B2B & Institutional Partnerships</div>
+        <h2 class="text-4xl font-[800] text-white mb-8 uppercase tracking-tight leading-tight">Empowering <span class="text-brand-orange">Singapore</span> <br>Through Code</h2>
+        <p class="text-slate-300 mb-8 leading-relaxed">As part of our mission to further the coding scene in Singapore among younger learners, The Coding Mentor partners with schools, non-profits, and private educational institutions to deliver high-quality computational thinking programs. We specialize in creating custom roadmaps that align with specific institutional goals and social impact targets.</p>
+        <div class="grid sm:grid-cols-2 gap-4 mb-10">
+          <div class="p-6 bg-white/5 border border-white/10 hover:border-brand-orange transition-colors"><h4 class="font-[800] text-white uppercase text-sm mb-1">School CCAs</h4><p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">MOE-aligned Curriculum</p></div>
+          <div class="p-6 bg-white/5 border border-white/10 hover:border-brand-orange transition-colors"><h4 class="font-[800] text-white uppercase text-sm mb-1">Charity Outreach</h4><p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Social Impact Programs</p></div>
+          <div class="p-6 bg-white/5 border border-white/10 hover:border-brand-orange transition-colors"><h4 class="font-[800] text-white uppercase text-sm mb-1">Private Schools</h4><p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Enrichment Integration</p></div>
+          <div class="p-6 bg-white/5 border border-white/10 hover:border-brand-orange transition-colors"><h4 class="font-[800] text-white uppercase text-sm mb-1">Holiday Camps</h4><p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Thematic Bootcamps</p></div>
+        </div>
+        <button onclick="handleWhatsAppRedirect('Hi! I am writing from an institution/charity and would like to discuss a partnership.')" class="btn-fun bg-brand-orange text-white px-10 py-4 text-sm w-full sm:w-auto shadow-lg hover:shadow-orange-500/20">Discuss Partnership</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-        function nextMentor() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
+<footer class="bg-white text-slate-500 py-20 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <div class="flex justify-center gap-6 mb-10">
+      <a href="https://www.facebook.com/TheCodingMentorSG/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/thecodingmentorsg/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Instagram
+      </a>
+    </div>
+    <div class="text-[10px] font-bold uppercase tracking-[3px] mb-2">thecodingmentorsg@gmail.com | +65 9774 4861</div>
+    <div class="text-[10px] font-bold uppercase tracking-[3px]">© 2026 The Coding Mentor Singapore</div>
+  </div>
+</footer>
 
-        function prevMentor() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        }
-    </script>
+<a href="javascript:void(0)" onclick="handleWhatsAppRedirect()" class="whatsapp-float">
+  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.7 69.4 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.6-16.5-14.7-27.6-32.8-30.8-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.6-9.2 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+</a>
+
+<div class="mobile-sticky-cta">
+  <button onclick="handleWhatsAppRedirect()" class="btn-fun bg-brand-orange text-white w-full py-4 text-center">Enrol Now</button>
+</div>
+
+<script>
+const WHATSAPP_NUMBER="6597744861",DEFAULT_MESSAGE="Hi! I'm interested to learn more about The Coding Mentor's classes";
+function handleWhatsAppRedirect(t=null){fbq('track','Contact');window.location.href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t||DEFAULT_MESSAGE)}`}
+let cur=0,tot=2;
+function showSlide(i){document.querySelectorAll('.mentor-slide').forEach(s=>s.classList.remove('active'));document.getElementById(`slide-${i}`).classList.add('active')}
+function nextMentor(){showSlide(cur=(cur+1)%tot)}
+function prevMentor(){showSlide(cur=(cur-1+tot)%tot)}
+</script>
 </body>
 </html>
